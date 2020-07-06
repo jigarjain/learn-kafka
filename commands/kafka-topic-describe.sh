@@ -1,0 +1,1 @@
+kafka-topics --describe --topic foo --zookeeper zookeeper
