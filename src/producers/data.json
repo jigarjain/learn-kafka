@@ -1,0 +1,38 @@
+[
+  {
+    "key": "1",
+    "value": "Bulbasaur"
+  },
+  {
+    "key": "2",
+    "value": "Ivysaur"
+  },
+  {
+    "key": "3",
+    "value": "Venusaur"
+  },
+  {
+    "key": "4",
+    "value": "Charmander"
+  },
+  {
+    "key": "5",
+    "value": "Charmeleon"
+  },
+  {
+    "key": "6",
+    "value": "Charizard"
+  },
+  {
+    "key": "7",
+    "value": "Squirtle"
+  },
+  {
+    "key": "8",
+    "value": "Wartortle"
+  },
+  {
+    "key": "9",
+    "value": "Blastoise"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "name": "learn-kafka",
+  "version": "0.0.1",
+  "description": "Kafka + Zookeeper + Nodejs",
+  "engines": {
+    "node": ">=14.5"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build",
+    "test": "echo \"no tests\"",
+    "produce": "node --experimental-specifier-resolution=node dist/producers",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-build\"",
+    "watch-build": "tsc -w",
+    "watch-test": "npm run test -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jigarjain/learn-kafka.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "Jigar Jain",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jigarjain/learn-kafka/issues"
+  },
+  "homepage": "https://github.com/jigarjain/learn-kafka#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "kafkajs": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.18",
+    "concurrently": "^5.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.6"
+  }
+}
